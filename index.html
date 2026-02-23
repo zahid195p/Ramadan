@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -44,213 +43,213 @@ button,input,select,textarea{font:inherit;color:inherit;border:none;background:n
 input[type=date]::-webkit-calendar-picker-indicator{filter:invert(0.7);opacity:0.6}
 
 /* ── Layout ─────────────────────────────── */
-#app{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh;padding-top:calc(var(–safe-top) + 4px);padding-bottom:calc(var(–safe-bottom) + 72px)}
+#app{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh;padding-top:calc(var(--safe-top) + 4px);padding-bottom:calc(var(--safe-bottom) + 72px)}
 main{flex:1;padding:0 12px;max-width:960px;margin:0 auto;width:100%}
 
 /* ── Header ─────────────────────────────── */
-#header{position:sticky;top:0;z-index:60;padding:8px 12px;background:color-mix(in srgb,var(–bg) 85%,transparent);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(–border)}
+#header{position:sticky;top:0;z-index:60;padding:8px 12px;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--border)}
 .hdr-inner{max-width:960px;margin:0 auto}
 .hdr-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
-.hdr-title{font-family:var(–font-serif);font-size:18px;font-weight:700;color:var(–gold);letter-spacing:.01em;line-height:1.2}
-.hdr-sub{font-size:11px;color:var(–tx3);margin-top:1px}
+.hdr-title{font-family:var(--font-serif);font-size:18px;font-weight:700;color:var(--gold);letter-spacing:.01em;line-height:1.2}
+.hdr-sub{font-size:11px;color:var(--tx3);margin-top:1px}
 .hdr-actions{display:flex;gap:6px;align-items:center;flex-shrink:0}
 .hdr-bar{display:flex;align-items:center;gap:8px;margin-top:6px;flex-wrap:wrap}
-.now-badge{display:flex;align-items:center;gap:5px;background:var(–surface2);border:1px solid var(–border);border-radius:999px;padding:4px 10px;font-size:11px;font-weight:500}
-.now-dot{width:6px;height:6px;border-radius:50%;background:var(–now);flex-shrink:0;animation:pulse 2s infinite}
+.now-badge{display:flex;align-items:center;gap:5px;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:11px;font-weight:500}
+.now-dot{width:6px;height:6px;border-radius:50%;background:var(--now);flex-shrink:0;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.85)}}
-.next-badge{font-size:11px;color:var(–gold);border:1px solid color-mix(in srgb,var(–gold) 30%,transparent);border-radius:999px;padding:4px 10px;background:color-mix(in srgb,var(–gold) 8%,transparent);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.next-badge{font-size:11px;color:var(--gold);border:1px solid color-mix(in srgb,var(--gold) 30%,transparent);border-radius:999px;padding:4px 10px;background:color-mix(in srgb,var(--gold) 8%,transparent);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* ── Bottom Nav ─────────────────────────── */
-#nav{position:fixed;bottom:0;left:0;right:0;z-index:60;background:color-mix(in srgb,var(–bg) 92%,transparent);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-top:1px solid var(–border);padding-bottom:var(–safe-bottom);display:flex;align-items:stretch}
-.nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:8px 4px;color:var(–tx3);font-size:10px;font-weight:500;transition:color .2s;min-height:54px;border:none;background:none;position:relative}
-.nav-btn.on{color:var(–gold)}
-.nav-btn.on::before{content:’’;position:absolute;top:0;left:20%;right:20%;height:2px;background:linear-gradient(90deg,var(–gold3),var(–gold));border-radius:0 0 3px 3px}
+#nav{position:fixed;bottom:0;left:0;right:0;z-index:60;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border-top:1px solid var(--border);padding-bottom:var(--safe-bottom);display:flex;align-items:stretch}
+.nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:8px 4px;color:var(--tx3);font-size:10px;font-weight:500;transition:color .2s;min-height:54px;border:none;background:none;position:relative}
+.nav-btn.on{color:var(--gold)}
+.nav-btn.on::before{content:'';position:absolute;top:0;left:20%;right:20%;height:2px;background:linear-gradient(90deg,var(--gold3),var(--gold));border-radius:0 0 3px 3px}
 .nav-icon{font-size:20px;line-height:1;transition:transform .2s}
 .nav-btn.on .nav-icon{transform:scale(1.1)}
 
 /* ── Cards ──────────────────────────────── */
-.card{background:var(–surface);border:1px solid var(–border);border-radius:var(–radius);box-shadow:var(–shadow-sm);overflow:hidden}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}
 .card+.card,.card+.section-block,.section-block+.card{margin-top:10px}
 .section-block{margin-top:10px}
 .card-body{padding:14px}
-.card-header{padding:12px 14px;border-bottom:1px solid var(–border);display:flex;align-items:center;justify-content:space-between;gap:8px}
-.card-title{font-weight:700;font-size:13px;letter-spacing:.02em;text-transform:uppercase;color:var(–tx2)}
+.card-header{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:8px}
+.card-title{font-weight:700;font-size:13px;letter-spacing:.02em;text-transform:uppercase;color:var(--tx2)}
 
 /* ── Buttons ────────────────────────────── */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid var(–border2);background:var(–surface2);border-radius:var(–radius-sm);padding:8px 12px;font-size:12px;font-weight:600;transition:all .15s;white-space:nowrap;min-height:36px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid var(--border2);background:var(--surface2);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;font-weight:600;transition:all .15s;white-space:nowrap;min-height:36px}
 .btn:active{transform:scale(.96);opacity:.85}
-.btn-primary{background:linear-gradient(135deg,var(–gold),var(–gold3));color:#0a0d14;border-color:transparent;box-shadow:0 2px 12px color-mix(in srgb,var(–gold) 30%,transparent)}
-.btn-ghost{background:transparent;border-color:var(–border)}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold3));color:#0a0d14;border-color:transparent;box-shadow:0 2px 12px color-mix(in srgb,var(--gold) 30%,transparent)}
+.btn-ghost{background:transparent;border-color:var(--border)}
 .btn-sm{padding:5px 9px;font-size:11px;min-height:28px;border-radius:8px}
-.btn-icon{width:36px;height:36px;padding:0;border-radius:var(–radius-sm)}
+.btn-icon{width:36px;height:36px;padding:0;border-radius:var(--radius-sm)}
 
 /* ── Segment control ───────────────────── */
-.seg{display:inline-flex;background:var(–surface2);border:1px solid var(–border);border-radius:var(–radius-sm);overflow:hidden}
-.seg button{padding:7px 12px;font-size:12px;font-weight:600;color:var(–tx2);transition:all .15s}
-.seg button.on{background:linear-gradient(135deg,var(–gold),var(–gold3));color:#0a0d14}
+.seg{display:inline-flex;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden}
+.seg button{padding:7px 12px;font-size:12px;font-weight:600;color:var(--tx2);transition:all .15s}
+.seg button.on{background:linear-gradient(135deg,var(--gold),var(--gold3));color:#0a0d14}
 
 /* ── Input ──────────────────────────────── */
-.input{background:var(–surface2);border:1px solid var(–border);border-radius:var(–radius-sm);padding:8px 10px;font-size:13px;width:100%;transition:border-color .15s}
-.input:focus{border-color:var(–gold3)}
+.input{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 10px;font-size:13px;width:100%;transition:border-color .15s}
+.input:focus{border-color:var(--gold3)}
 
 /* ── Toggle ─────────────────────────────── */
-.toggle{width:46px;height:26px;border-radius:999px;background:var(–surface3);border:1px solid var(–border);position:relative;flex-shrink:0;transition:all .2s}
-.toggle::after{content:’’;position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(–tx3);transition:all .2s}
-.toggle.on{background:color-mix(in srgb,var(–gold) 20%,transparent);border-color:var(–gold3)}
-.toggle.on::after{left:22px;background:var(–gold)}
+.toggle{width:46px;height:26px;border-radius:999px;background:var(--surface3);border:1px solid var(--border);position:relative;flex-shrink:0;transition:all .2s}
+.toggle::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--tx3);transition:all .2s}
+.toggle.on{background:color-mix(in srgb,var(--gold) 20%,transparent);border-color:var(--gold3)}
+.toggle.on::after{left:22px;background:var(--gold)}
 
 /* ── Prayer color tokens ─────────────────── */
-.c-imsak{color:var(–teal)} .bg-imsak{background:var(–teal)}
-.c-fajr{color:var(–sky)} .bg-fajr{background:var(–sky)}
-.c-dhuhr{color:var(–indigo)} .bg-dhuhr{background:var(–indigo)}
-.c-asr{color:var(–violet)} .bg-asr{background:var(–violet)}
-.c-iftar{color:var(–orange)} .bg-iftar{background:var(–orange)}
-.c-maghrib{color:var(–amber)} .bg-maghrib{background:var(–amber)}
-.c-isha{color:var(–tx2)} .bg-isha{background:var(–tx2)}
+.c-imsak{color:var(--teal)} .bg-imsak{background:var(--teal)}
+.c-fajr{color:var(--sky)} .bg-fajr{background:var(--sky)}
+.c-dhuhr{color:var(--indigo)} .bg-dhuhr{background:var(--indigo)}
+.c-asr{color:var(--violet)} .bg-asr{background:var(--violet)}
+.c-iftar{color:var(--orange)} .bg-iftar{background:var(--orange)}
+.c-maghrib{color:var(--amber)} .bg-maghrib{background:var(--amber)}
+.c-isha{color:var(--tx2)} .bg-isha{background:var(--tx2)}
 
 /* ── Summary page ───────────────────────── */
 .stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.stat-card{background:var(–surface2);border:1px solid var(–border);border-radius:var(–radius-sm);padding:12px;text-align:center}
-.stat-card .label{font-size:10px;color:var(–tx3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
-.stat-card .value{font-size:22px;font-weight:800;font-family:var(–font-mono);color:var(–gold)}
-.stat-card .sub{font-size:10px;color:var(–tx3);margin-top:2px}
-.status-banner{border-radius:var(–radius-sm);padding:12px 14px;display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px}
-.status-banner.fast{background:color-mix(in srgb,var(–gold) 12%,transparent);border:1px solid color-mix(in srgb,var(–gold) 25%,transparent);color:var(–gold2)}
-.status-banner.pre{background:color-mix(in srgb,var(–teal) 12%,transparent);border:1px solid color-mix(in srgb,var(–teal) 25%,transparent);color:var(–teal)}
-.status-banner.post{background:color-mix(in srgb,var(–indigo) 12%,transparent);border:1px solid color-mix(in srgb,var(–indigo) 25%,transparent);color:var(–indigo)}
-.status-banner.outside{background:var(–surface2);border:1px solid var(–border);color:var(–tx2)}
+.stat-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;text-align:center}
+.stat-card .label{font-size:10px;color:var(--tx3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.stat-card .value{font-size:22px;font-weight:800;font-family:var(--font-mono);color:var(--gold)}
+.stat-card .sub{font-size:10px;color:var(--tx3);margin-top:2px}
+.status-banner{border-radius:var(--radius-sm);padding:12px 14px;display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px}
+.status-banner.fast{background:color-mix(in srgb,var(--gold) 12%,transparent);border:1px solid color-mix(in srgb,var(--gold) 25%,transparent);color:var(--gold2)}
+.status-banner.pre{background:color-mix(in srgb,var(--teal) 12%,transparent);border:1px solid color-mix(in srgb,var(--teal) 25%,transparent);color:var(--teal)}
+.status-banner.post{background:color-mix(in srgb,var(--indigo) 12%,transparent);border:1px solid color-mix(in srgb,var(--indigo) 25%,transparent);color:var(--indigo)}
+.status-banner.outside{background:var(--surface2);border:1px solid var(--border);color:var(--tx2)}
 .status-icon{font-size:24px;flex-shrink:0}
 
 /* ── Prayer rows ────────────────────────── */
 .prayer-list{display:flex;flex-direction:column;gap:6px}
-.prayer-row{display:flex;align-items:center;gap:10px;background:var(–surface2);border:1px solid var(–border);border-radius:var(–radius-sm);padding:10px 12px;transition:all .15s}
-.prayer-row.highlight{border-color:color-mix(in srgb,var(–gold) 40%,transparent);background:color-mix(in srgb,var(–gold) 6%,transparent)}
-.prayer-row.now-row{border-color:color-mix(in srgb,var(–rose) 50%,transparent);background:color-mix(in srgb,var(–rose) 6%,transparent);box-shadow:0 0 0 1px color-mix(in srgb,var(–rose) 20%,transparent)}
+.prayer-row{display:flex;align-items:center;gap:10px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 12px;transition:all .15s}
+.prayer-row.highlight{border-color:color-mix(in srgb,var(--gold) 40%,transparent);background:color-mix(in srgb,var(--gold) 6%,transparent)}
+.prayer-row.now-row{border-color:color-mix(in srgb,var(--rose) 50%,transparent);background:color-mix(in srgb,var(--rose) 6%,transparent);box-shadow:0 0 0 1px color-mix(in srgb,var(--rose) 20%,transparent)}
 .prayer-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
 .prayer-name{flex:1;font-weight:600;font-size:13px}
-.prayer-sub{font-size:11px;color:var(–tx2);margin-top:1px}
-.prayer-time{font-family:var(–font-mono);font-size:15px;font-weight:700}
-.prayer-badge{font-size:10px;padding:2px 7px;border-radius:999px;border:1px solid var(–border2);color:var(–tx2);white-space:nowrap}
-.prayer-badge.upcoming{background:color-mix(in srgb,var(–gold) 15%,transparent);border-color:color-mix(in srgb,var(–gold) 35%,transparent);color:var(–gold2)}
+.prayer-sub{font-size:11px;color:var(--tx2);margin-top:1px}
+.prayer-time{font-family:var(--font-mono);font-size:15px;font-weight:700}
+.prayer-badge{font-size:10px;padding:2px 7px;border-radius:999px;border:1px solid var(--border2);color:var(--tx2);white-space:nowrap}
+.prayer-badge.upcoming{background:color-mix(in srgb,var(--gold) 15%,transparent);border-color:color-mix(in srgb,var(--gold) 35%,transparent);color:var(--gold2)}
 .prayer-badge.passed{opacity:.5}
-.prayer-badge.now{background:color-mix(in srgb,var(–rose) 15%,transparent);border-color:color-mix(in srgb,var(–rose) 40%,transparent);color:var(–rose)}
+.prayer-badge.now{background:color-mix(in srgb,var(--rose) 15%,transparent);border-color:color-mix(in srgb,var(--rose) 40%,transparent);color:var(--rose)}
 
 /* ── Progress bar ───────────────────────── */
-.progress-wrap{background:var(–surface3);border-radius:999px;height:10px;overflow:hidden;border:1px solid var(–border)}
-.progress-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(–teal2),var(–amber),var(–orange2));transition:width .5s ease;min-width:2px}
+.progress-wrap{background:var(--surface3);border-radius:999px;height:10px;overflow:hidden;border:1px solid var(--border)}
+.progress-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--teal2),var(--amber),var(--orange2));transition:width .5s ease;min-width:2px}
 
 /* ── Timeline strip ─────────────────────── */
-.timeline-strip{position:relative;height:40px;border-radius:var(–radius-sm);overflow:hidden;background:var(–surface3);border:1px solid var(–border)}
+.timeline-strip{position:relative;height:40px;border-radius:var(--radius-sm);overflow:hidden;background:var(--surface3);border:1px solid var(--border)}
 .ts-seg{position:absolute;top:0;bottom:0}
 .ts-mark{position:absolute;top:0;bottom:0;width:2px}
-.ts-label{position:absolute;top:2px;font-size:8px;color:var(–tx3);white-space:nowrap;transform:translateX(-50%)}
-.ts-now-line{position:absolute;top:0;bottom:0;width:2px;background:var(–now);z-index:2}
+.ts-label{position:absolute;top:2px;font-size:8px;color:var(--tx3);white-space:nowrap;transform:translateX(-50%)}
+.ts-now-line{position:absolute;top:0;bottom:0;width:2px;background:var(--now);z-index:2}
 
 /* ── Calendar view ───────────────────────── */
 .cal-toolbar{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
 .cal-date-display{font-weight:700;font-size:13px;flex:1;min-width:100px}
 
 /* ── Week/Day grid ───────────────────────── */
-.grid-wrap{position:relative;overflow:hidden;border-radius:0 0 var(–radius) var(–radius)}
+.grid-wrap{position:relative;overflow:hidden;border-radius:0 0 var(--radius) var(--radius)}
 .grid-scroll{overflow:auto;-webkit-overflow-scrolling:touch;max-height:calc(100dvh - 260px)}
 .grid-inner{position:relative}
-.grid-header{display:flex;position:sticky;top:0;z-index:10;background:var(–surface)}
-.grid-time-col{width:52px;flex-shrink:0;border-right:1px solid var(–border)}
-.grid-day-col{flex:1;min-width:0;border-right:1px solid var(–border);text-align:center;padding:8px 4px}
+.grid-header{display:flex;position:sticky;top:0;z-index:10;background:var(--surface)}
+.grid-time-col{width:52px;flex-shrink:0;border-right:1px solid var(--border)}
+.grid-day-col{flex:1;min-width:0;border-right:1px solid var(--border);text-align:center;padding:8px 4px}
 .grid-day-col:last-child{border-right:none}
-.grid-day-col .dow{font-size:10px;color:var(–tx2);text-transform:uppercase;letter-spacing:.04em}
+.grid-day-col .dow{font-size:10px;color:var(--tx2);text-transform:uppercase;letter-spacing:.04em}
 .grid-day-col .dom{font-size:16px;font-weight:800}
-.grid-day-col .roza-num{font-size:9px;color:var(–gold);font-weight:700;font-family:var(–font-mono)}
-.grid-day-col.today-col .dom{background:var(–gold);color:#0a0d14;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;margin:2px auto}
-.grid-day-col.selected-col{background:color-mix(in srgb,var(–gold) 5%,transparent)}
-.grid-day-col.friday-col{background:color-mix(in srgb,var(–emerald) 4%,transparent)}
+.grid-day-col .roza-num{font-size:9px;color:var(--gold);font-weight:700;font-family:var(--font-mono)}
+.grid-day-col.today-col .dom{background:var(--gold);color:#0a0d14;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;margin:2px auto}
+.grid-day-col.selected-col{background:color-mix(in srgb,var(--gold) 5%,transparent)}
+.grid-day-col.friday-col{background:color-mix(in srgb,var(--emerald) 4%,transparent)}
 .grid-body{display:flex}
-.time-labels{width:52px;flex-shrink:0;position:relative;border-right:1px solid var(–border)}
-.time-label{position:absolute;right:6px;font-size:10px;color:var(–tx3);font-family:var(–font-mono);transform:translateY(-50%);user-select:none}
+.time-labels{width:52px;flex-shrink:0;position:relative;border-right:1px solid var(--border)}
+.time-label{position:absolute;right:6px;font-size:10px;color:var(--tx3);font-family:var(--font-mono);transform:translateY(-50%);user-select:none}
 .day-columns{flex:1;display:flex;position:relative}
-.day-col{flex:1;position:relative;border-right:1px solid var(–border);min-width:0}
+.day-col{flex:1;position:relative;border-right:1px solid var(--border);min-width:0}
 .day-col:last-child{border-right:none}
-.day-col.today-bg{background:color-mix(in srgb,var(–gold) 2%,transparent)}
-.hour-line{position:absolute;left:0;right:0;height:1px;background:var(–border)}
-.half-line{position:absolute;left:0;right:0;height:1px;background:color-mix(in srgb,var(–border) 40%,transparent)}
+.day-col.today-bg{background:color-mix(in srgb,var(--gold) 2%,transparent)}
+.hour-line{position:absolute;left:0;right:0;height:1px;background:var(--border)}
+.half-line{position:absolute;left:0;right:0;height:1px;background:color-mix(in srgb,var(--border) 40%,transparent)}
 .shade-band{position:absolute;left:0;right:0}
 .ev-line{position:absolute;left:0;right:0;height:2px}
 .ev-chip{position:absolute;border-radius:5px;padding:1px 4px;font-size:9px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1px solid rgba(255,255,255,.15);line-height:1.5;cursor:pointer;transition:opacity .1s}
 .ev-chip:active{opacity:.7}
 .ev-chip.dark-text{color:#0a0d14}
-.now-line{position:absolute;left:0;right:0;height:2px;background:var(–now);z-index:5;pointer-events:none}
-.now-line::before{content:’’;position:absolute;left:-4px;top:-4px;width:10px;height:10px;border-radius:50%;background:var(–now)}
+.now-line{position:absolute;left:0;right:0;height:2px;background:var(--now);z-index:5;pointer-events:none}
+.now-line::before{content:'';position:absolute;left:-4px;top:-4px;width:10px;height:10px;border-radius:50%;background:var(--now)}
 
 /* ── Month calendar ─────────────────────── */
 .month-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;padding:10px}
-.month-dow{font-size:9px;color:var(–tx3);text-align:center;padding:4px 0;text-transform:uppercase;letter-spacing:.04em}
-.month-day{min-height:52px;border:1px solid transparent;border-radius:var(–radius-sm);padding:5px;cursor:pointer;transition:all .15s;display:flex;flex-direction:column;gap:1px}
-.month-day.has-data{background:var(–surface2);border-color:var(–border)}
-.month-day.has-data:active{background:var(–surface3)}
-.month-day.is-today{border-color:var(–gold)!important;background:color-mix(in srgb,var(–gold) 8%,transparent)!important}
-.month-day.is-selected{border-color:var(–sky)!important;background:color-mix(in srgb,var(–sky) 8%,transparent)!important}
-.month-day.is-friday{background:color-mix(in srgb,var(–emerald) 6%,transparent);border-color:color-mix(in srgb,var(–emerald) 20%,transparent)}
+.month-dow{font-size:9px;color:var(--tx3);text-align:center;padding:4px 0;text-transform:uppercase;letter-spacing:.04em}
+.month-day{min-height:52px;border:1px solid transparent;border-radius:var(--radius-sm);padding:5px;cursor:pointer;transition:all .15s;display:flex;flex-direction:column;gap:1px}
+.month-day.has-data{background:var(--surface2);border-color:var(--border)}
+.month-day.has-data:active{background:var(--surface3)}
+.month-day.is-today{border-color:var(--gold)!important;background:color-mix(in srgb,var(--gold) 8%,transparent)!important}
+.month-day.is-selected{border-color:var(--sky)!important;background:color-mix(in srgb,var(--sky) 8%,transparent)!important}
+.month-day.is-friday{background:color-mix(in srgb,var(--emerald) 6%,transparent);border-color:color-mix(in srgb,var(--emerald) 20%,transparent)}
 .month-day.blank{border:none;background:none;cursor:default}
 .month-day .day-num{font-size:13px;font-weight:700}
-.month-day .day-time{font-size:9px;color:var(–tx3);font-family:var(–font-mono)}
-.month-day .jum-tag{font-size:8px;color:var(–emerald);font-weight:700}
+.month-day .day-time{font-size:9px;color:var(--tx3);font-family:var(--font-mono)}
+.month-day .jum-tag{font-size:8px;color:var(--emerald);font-weight:700}
 
 /* ── Timetable ───────────────────────────── */
-.table-wrap{overflow:auto;-webkit-overflow-scrolling:touch;border-radius:0 0 var(–radius) var(–radius)}
-table{width:100%;border-collapse:separate;border-spacing:0;font-size:12px;font-family:var(–font-mono)}
-thead th{position:sticky;top:0;background:var(–surface);color:var(–tx2);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:8px 6px;border-bottom:1px solid var(–border);z-index:2;white-space:nowrap}
-tbody td{padding:7px 6px;border-bottom:1px solid var(–border);white-space:nowrap}
+.table-wrap{overflow:auto;-webkit-overflow-scrolling:touch;border-radius:0 0 var(--radius) var(--radius)}
+table{width:100%;border-collapse:separate;border-spacing:0;font-size:12px;font-family:var(--font-mono)}
+thead th{position:sticky;top:0;background:var(--surface);color:var(--tx2);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:8px 6px;border-bottom:1px solid var(--border);z-index:2;white-space:nowrap}
+tbody td{padding:7px 6px;border-bottom:1px solid var(--border);white-space:nowrap}
 tbody tr:last-child td{border-bottom:none}
-tbody tr.is-today td{background:color-mix(in srgb,var(–gold) 6%,transparent)}
-tbody tr.is-friday td:first-child{color:var(–emerald)}
-tbody tr:hover td{background:var(–surface2)}
+tbody tr.is-today td{background:color-mix(in srgb,var(--gold) 6%,transparent)}
+tbody tr.is-friday td:first-child{color:var(--emerald)}
+tbody tr:hover td{background:var(--surface2)}
 
 /* ── Settings ───────────────────────────── */
 .setting-group{margin-top:10px}
-.setting-group-title{font-size:10px;color:var(–tx3);text-transform:uppercase;letter-spacing:.06em;font-weight:700;padding:0 4px;margin-bottom:6px}
-.setting-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1px solid var(–border)}
+.setting-group-title{font-size:10px;color:var(--tx3);text-transform:uppercase;letter-spacing:.06em;font-weight:700;padding:0 4px;margin-bottom:6px}
+.setting-row{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1px solid var(--border)}
 .setting-row:last-child{border-bottom:none}
 .setting-label{font-size:13px;font-weight:500}
-.setting-sub{font-size:11px;color:var(–tx3);margin-top:1px}
+.setting-sub{font-size:11px;color:var(--tx3);margin-top:1px}
 .offset-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;padding:12px}
-.offset-item{background:var(–surface2);border:1px solid var(–border);border-radius:var(–radius-sm);padding:8px;display:flex;flex-direction:column;gap:4px}
-.offset-item label{font-size:10px;color:var(–tx2);font-weight:600}
-.offset-item input{font-size:13px;font-family:var(–font-mono);background:transparent;width:100%;border-bottom:1px solid var(–border);padding:2px 0}
+.offset-item{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px;display:flex;flex-direction:column;gap:4px}
+.offset-item label{font-size:10px;color:var(--tx2);font-weight:600}
+.offset-item input{font-size:13px;font-family:var(--font-mono);background:transparent;width:100%;border-bottom:1px solid var(--border);padding:2px 0}
 
 /* ── Toast ───────────────────────────────── */
-#toast{position:fixed;left:12px;right:12px;bottom:calc(74px + var(–safe-bottom));z-index:100;background:var(–surface);border:1px solid var(–border2);border-radius:var(–radius-sm);padding:10px 14px;box-shadow:var(–shadow);transform:translateY(20px);opacity:0;transition:all .25s;pointer-events:none}
+#toast{position:fixed;left:12px;right:12px;bottom:calc(74px + var(--safe-bottom));z-index:100;background:var(--surface);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:10px 14px;box-shadow:var(--shadow);transform:translateY(20px);opacity:0;transition:all .25s;pointer-events:none}
 #toast.show{transform:translateY(0);opacity:1}
 #toast .t-title{font-size:13px;font-weight:700}
-#toast .t-sub{font-size:11px;color:var(–tx2);margin-top:2px}
+#toast .t-sub{font-size:11px;color:var(--tx2);margin-top:2px}
 
 /* ── Scrollbar ───────────────────────────── */
 ::-webkit-scrollbar{width:4px;height:4px}
 ::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:var(–border2);border-radius:999px}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:999px}
 
 /* ── Utility ─────────────────────────────── */
-.mt-8{margin-top:8px}.mt-12{margin-top:12px}.flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-6{gap:6px}.gap-8{gap:8px}.gap-10{gap:10px}.flex-1{flex:1}.text-sm{font-size:12px;color:var(–tx2)}.text-xs{font-size:10px;color:var(–tx3)}.font-bold{font-weight:700}.font-mono{font-family:var(–font-mono)}.text-gold{color:var(–gold)}.hidden{display:none!important}
+.mt-8{margin-top:8px}.mt-12{margin-top:12px}.flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-6{gap:6px}.gap-8{gap:8px}.gap-10{gap:10px}.flex-1{flex:1}.text-sm{font-size:12px;color:var(--tx2)}.text-xs{font-size:10px;color:var(--tx3)}.font-bold{font-weight:700}.font-mono{font-family:var(--font-mono)}.text-gold{color:var(--gold)}.hidden{display:none!important}
 
 /* ── Animations ──────────────────────────── */
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:fadeIn .2s ease}
 
 /* ── Jumuah badge ───────────────────────── */
-.jum-badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;color:var(–emerald);border:1px solid color-mix(in srgb,var(–emerald) 30%,transparent);border-radius:999px;padding:1px 5px;margin-top:2px;font-weight:700}
+.jum-badge{display:inline-flex;align-items:center;gap:3px;font-size:9px;color:var(--emerald);border:1px solid color-mix(in srgb,var(--emerald) 30%,transparent);border-radius:999px;padding:1px 5px;margin-top:2px;font-weight:700}
 
 /* ── Legend ──────────────────────────────── */
 .legend{display:flex;flex-wrap:wrap;gap:5px}
-.legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(–tx2);padding:3px 7px;border:1px solid var(–border);border-radius:999px;background:var(–surface2)}
+.legend-item{display:flex;align-items:center;gap:4px;font-size:10px;color:var(--tx2);padding:3px 7px;border:1px solid var(--border);border-radius:999px;background:var(--surface2)}
 .legend-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
 
 /* Ramadan-specific page header */
-.page-hero{background:linear-gradient(135deg,color-mix(in srgb,var(–gold) 12%,transparent),color-mix(in srgb,var(–teal) 6%,transparent));border:1px solid color-mix(in srgb,var(–gold) 20%,transparent);border-radius:var(–radius);padding:14px;margin-bottom:10px;display:flex;align-items:center;gap:12px}
+.page-hero{background:linear-gradient(135deg,color-mix(in srgb,var(--gold) 12%,transparent),color-mix(in srgb,var(--teal) 6%,transparent));border:1px solid color-mix(in srgb,var(--gold) 20%,transparent);border-radius:var(--radius);padding:14px;margin-bottom:10px;display:flex;align-items:center;gap:12px}
 .page-hero-icon{font-size:32px;flex-shrink:0}
-.page-hero-title{font-family:var(–font-serif);font-size:16px;color:var(–gold2);font-weight:700}
-.page-hero-sub{font-size:11px;color:var(–tx2);margin-top:2px}
+.page-hero-title{font-family:var(--font-serif);font-size:16px;color:var(--gold2);font-weight:700}
+.page-hero-sub{font-size:11px;color:var(--tx2);margin-top:2px}
 
 /* Loading */
-.skeleton{background:linear-gradient(90deg,var(–surface2) 25%,var(–surface3) 50%,var(–surface2) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
+.skeleton{background:linear-gradient(90deg,var(--surface2) 25%,var(--surface3) 50%,var(--surface2) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite}
 @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 
 /* Responsive */
@@ -267,8 +266,8 @@ tbody tr:hover td{background:var(–surface2)}
     <div class="hdr-inner">
       <div class="hdr-top">
         <div>
-          <div class="hdr-title" id="hdr-title">نانجنگ رمضان 2026</div>
-          <div class="hdr-sub" id="hdr-sub">Offline • Nanjing, China</div>
+          <div class="hdr-title" id="hdr-title">Nanjing Ramadan 2026</div>
+          <div class="hdr-sub" id="hdr-sub">Nanjing, China</div>
         </div>
         <div class="hdr-actions">
           <button class="btn btn-sm btn-ghost btn-icon" id="theme-toggle" title="Toggle theme">☀</button>
@@ -346,6 +345,8 @@ const LS='ram_nj26';
 const DEF={tab:'summary',lang:'en',theme:'dark',fmt:'24',ws:'monday',alerts:1,sound:1,vib:1,shade:1,fshade:1,dual:0,goff:0,off:{imsak:0,fajr:0,dhuhr:0,asr:0,iftar:0,maghrib:0,isha:0}};
 let S=Object.assign({},DEF,JSON.parse(localStorage.getItem(LS)||'{}'));
 S.off=Object.assign({},DEF.off,S.off||{});
+S.lang='en';
+S.dual=0;
 let DATA=(JSON.parse(localStorage.getItem(LS+'_data')||'null')||RAW).map(a=>({date:a[0],imsak:a[1],fajr:a[2],dhuhr:a[3],asr:a[4],iftar:a[5],maghrib:a[6],isha:a[7]}));
 
 // ── STATE ─────────────────────────────────────────────────────────────
@@ -356,18 +357,14 @@ let audioCtx;
 
 // ── I18N ──────────────────────────────────────────────────────────────
 const NAMES={
-  en:{imsak:'Sehri/Imsak',fajr:'Fajr',dhuhr:'Dhuhr',asr:'Asr',iftar:'Iftar',maghrib:'Maghrib',isha:'Isha',jum:'Jumuah'},
-  ur:{imsak:'سحری',fajr:'فجر',dhuhr:'ظہر',asr:'عصر',iftar:'افطار',maghrib:'مغرب',isha:'عشاء',jum:'جمعہ'},
-  zh:{imsak:'封斋',fajr:'晨礼',dhuhr:'晌礼',asr:'晡礼',iftar:'开斋',maghrib:'昏礼',isha:'宵礼',jum:'主麻'}
+  en:{imsak:'Sehri/Imsak',fajr:'Fajr',dhuhr:'Dhuhr',asr:'Asr',iftar:'Iftar',maghrib:'Maghrib',isha:'Isha',jum:'Jumuah'}
 };
 const LABELS={
-  en:{summary:'Summary',calendar:'Calendar',day:'Day View',month:'Month',table:'Timetable',settings:'Settings',today:'Today',prev:'‹',next:'›',week:'Week',day:'Day',roza:'Roza',done:'Done',left:'Left',status:'Status',next_prayer:'Next Prayer',to_iftar:'To Iftar',to_sehri:'Next Sehri',progress:'Fast Progress',jum:'Jumuah',theme:'Theme',lang:'Language',fmt:'Time Format',ws:'Week Starts',alerts:'Alerts',sound:'Alert Sound',vib:'Vibration',dual:'Dual Labels',shade:'Day/Night Shading',fshade:'Fasting Shading',offsets:'Prayer Offsets',global_off:'Global',export:'Export CSV',import:'Import CSV',reset:'Reset All',save:'Saved!',apply:'Apply',paste_csv:'Paste CSV data',copied:'Copied to clipboard',fast_progress:'Fasting time elapsed',range:'Ramadan',before:'Before Ramadan',after:'Ramadan Ended',pre_sehri:'Before Sehri Cutoff',fasting:'Fasting in Progress',post_iftar:'After Iftar'},
-  ur:{summary:'خلاصہ',calendar:'کیلنڈر',day:'دن',month:'مہینہ',table:'اوقات',settings:'ترتیبات',today:'آج',prev:'‹',next:'›',week:'ہفتہ',day_btn:'دن',roza:'روزہ',done:'مکمل',left:'باقی',status:'حالت',next_prayer:'اگلی نماز',to_iftar:'افطار تک',to_sehri:'اگلی سحری',progress:'پیشرفت',jum:'جمعہ',theme:'تھیم',lang:'زبان',fmt:'وقت',ws:'ہفتہ',alerts:'الرٹس',sound:'آواز',vib:'وائبریشن',dual:'ڈوئل',shade:'شیڈنگ',fshade:'روزہ شیڈنگ',offsets:'آفسیٹ',global_off:'گلوبل',export:'CSV',import:'درآمد',reset:'ری سیٹ',save:'محفوظ',apply:'لاگو',paste_csv:'CSV',copied:'کاپی ہو گئی',fast_progress:'روزے کی پیشرفت',range:'رمضان',before:'رمضان سے پہلے',after:'رمضان ختم',pre_sehri:'سحری سے پہلے',fasting:'روزہ جاری',post_iftar:'افطار کے بعد'},
-  zh:{summary:'概览',calendar:'日历',day:'当天',month:'月份',table:'时间表',settings:'设置',today:'今天',prev:'‹',next:'›',week:'周',day_btn:'日',roza:'天数',done:'已完成',left:'剩余',status:'状态',next_prayer:'下一次',to_iftar:'距开斋',to_sehri:'距封斋',progress:'封斋进度',jum:'主麻',theme:'主题',lang:'语言',fmt:'时间制',ws:'周开始',alerts:'提醒',sound:'声音',vib:'震动',dual:'双语',shade:'底色',fshade:'封斋底色',offsets:'偏移',global_off:'全局',export:'导出CSV',import:'导入CSV',reset:'重置',save:'已保存',apply:'应用',paste_csv:'粘贴CSV',copied:'已复制',fast_progress:'封斋进度',range:'斋戒',before:'尚未开始',after:'已结束',pre_sehri:'封斋前',fasting:'正在封斋',post_iftar:'开斋后'}
+  en:{summary:'Summary',calendar:'Calendar',day:'Day View',month:'Month',table:'Timetable',settings:'Settings',today:'Today',prev:'‹',next:'›',week:'Week',roza:'Roza',done:'Done',left:'Left',status:'Status',next_prayer:'Next Prayer',to_iftar:'To Iftar',to_sehri:'Next Sehri',progress:'Fast Progress',jum:'Jumuah',theme:'Theme',fmt:'Time Format',ws:'Week Starts',alerts:'Alerts',sound:'Alert Sound',vib:'Vibration',shade:'Day/Night Shading',fshade:'Fasting Shading',offsets:'Prayer Offsets',global_off:'Global',export:'Export CSV',import:'Import CSV',reset:'Reset All',save:'Saved!',apply:'Apply',paste_csv:'Paste CSV data',copied:'Copied to clipboard',fast_progress:'Fasting time elapsed',range:'Ramadan',before:'Before Ramadan',after:'Ramadan Ended',pre_sehri:'Before Sehri Cutoff',fasting:'Fasting in Progress',post_iftar:'After Iftar'}
 };
-function t(k){let l=LABELS[S.lang]||LABELS.en; return l[k]||LABELS.en[k]||k}
-function pname(k,isFriday=false){let n=NAMES[S.lang]||NAMES.en; let txt=(k==='dhuhr'&&isFriday)?n.jum:n[k]; if(S.dual&&S.lang!=='en'){let en=NAMES.en; let alt=(k==='dhuhr'&&isFriday)?en.jum:en[k]; txt+=' / '+alt} return txt}
-function locale(){return S.lang==='ur'?'ur-PK':S.lang==='zh'?'zh-CN':'en-US'}
+function t(k){let l=LABELS.en; return l[k]||k}
+function pname(k,isFriday=false){let n=NAMES.en; return (k==='dhuhr'&&isFriday)?n.jum:n[k]}
+function locale(){return 'en-US'}
 
 // ── TIME HELPERS ──────────────────────────────────────────────────────
 function z(n){return String(n).padStart(2,'0')}
@@ -393,7 +390,7 @@ function weekDates(anchor){let d=parseDate(anchor),wd=d.getDay(),st=S.ws==='mond
 function getStatus(){
   const t=today(), r=getRow(t), now=new Date(), nm=now.getHours()*60+now.getMinutes()+now.getSeconds()/60;
   const first=DATA[0].date, last=DATA[DATA.length-1].date;
-  if(!r){return{in:false,before:t<first,after:t>last,day:t<first?0:DATA.length,comp:t<first?0:DATA.length,left:t<first?DATA.length:0,pct:t<first?0:1,status:t<first?'before':'after',fp:0}};}
+  if(!r){return{in:false,before:t<first,after:t>last,day:t<first?0:DATA.length,comp:t<first?0:DATA.length,left:t<first?DATA.length:0,pct:t<first?0:1,status:t<first?'before':'after',fp:0};}
   const im=toMins(r.imsak), it=toMins(r.iftar);
   const comp=rozaIndex(t)-1+(nm>=it?1:0);
   const fp=nm<im?0:nm>=it?1:Math.max(0,(nm-im)/(it-im));
@@ -510,7 +507,7 @@ function renderSummary(){
       return `<div class="prayer-row${isNow?' now-row':highlight?' highlight':''}">
         <span class="prayer-dot" style="background:${COLORS[k]}"></span>
         <div class="flex-1">
-          <div class="prayer-name">${pname(k,j)}${j?`<span class="jum-badge">▼ ${t('jum')}</span>`:''}${k==='imsak'||k==='iftar'?'':''}  </div>
+          <div class="prayer-name">${pname(k,j)}${j?`<span class="jum-badge">▼ ${t('jum')}</span>`:''}</div>
           ${isNow?`<div class="prayer-sub">Now!</div>`:''}
         </div>
         <div style="text-align:right">
@@ -699,7 +696,6 @@ function renderDay(){
     const fp=isT?Math.max(0,Math.min(1,(nm-im)/(it-im))):0;
     const pct=x=>(x/1440*100).toFixed(2)+'%';
 
-    // status for today's prayers
     const prayers=PRAYERS.map(k=>{
       const mi=toMins(r[k]),j=k==='dhuhr'&&isFriday(s);
       const base=parseDate(s),dt=new Date(base.getFullYear(),base.getMonth(),base.getDate(),(mi/60)|0,mi%60,0,0);
@@ -770,19 +766,17 @@ function renderMonth(){
     const[y,mm]=mo.split('-').map(Number);
     const fd=new Date(y,mm-1,1),ld=new Date(y,mm,0);
     const ws=S.ws==='monday'?1:0,pad=(fd.getDay()-ws+7)%7;
-    // Day headers
     const dayLabels=[...Array(7)].map((_,i)=>{
       const ref=new Date(2026,1,1+((ws+i)%7));
       return`<div class="month-dow">${new Intl.DateTimeFormat(locale(),{weekday:'short'}).format(ref)}</div>`;
     }).join('');
-    // Day cells
     let cells=[...Array(pad)].map(()=>`<div class="month-day blank"></div>`).join('');
     for(let day=1;day<=ld.getDate();day++){
       const s=`${y}-${z(mm)}-${z(day)}`,r=getRow(s),isFr=isFriday(s);
       const cls=['month-day',r?'has-data':'',s===td?'is-today':'',s===selectedDate&&s!==td?'is-selected':'',isFr&&r?'is-friday':''].filter(Boolean).join(' ');
       cells+=`<div class="${cls}" data-s="${s}">
         <div class="day-num" style="${s===td?'color:var(--gold)':''}">${day}</div>
-        ${r?`<div class="day-time">${fmtTime(r.imsak)}</div><div class="day-time">${fmtTime(r.iftar)}</div>`:''} 
+        ${r?`<div class="day-time">${fmtTime(r.imsak)}</div><div class="day-time">${fmtTime(r.iftar)}</div>`:''}
         ${isFr&&r?`<div class="jum-tag">▼ ${(NAMES[S.lang]||NAMES.en).jum}</div>`:''}
       </div>`;
     }
@@ -835,112 +829,132 @@ function renderTable(){
         </div>
         <div class="text-xs mt-8" style="margin-top:8px">${t('paste_csv')}</div>
         <textarea id="csv-paste" class="input mt-8" style="min-height:80px;margin-top:6px;resize:vertical" placeholder="date,imsak,fajr,dhuhr,asr,iftar,maghrib,isha&#10;2026-02-19,05:13,..."></textarea>
-
-```
-    <div class="flex items-center gap-6 mt-8" style="margin-top:8px">
-      <button class="btn btn-primary btn-sm" id="csv-apply">${t('apply')}</button>
-      <button class="btn btn-ghost btn-sm" id="csv-reset">${t('reset')}</button>
+        <div class="flex items-center gap-6 mt-8" style="margin-top:8px">
+          <button class="btn btn-primary btn-sm" id="csv-apply">${t('apply')}</button>
+          <button class="btn btn-ghost btn-sm" id="csv-reset">${t('reset')}</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-```
+  `;
 
-`;
-
-document.getElementById(‘tbl-export’).onclick=()=>{
-const hdr=[‘date’,…PRAYERS],csv=[hdr.join(’,’),…rows.map(r=>hdr.map(k=>r[k]).join(’,’))].join(’\n’);
-const a=document.createElement(‘a’);a.href=URL.createObjectURL(new Blob([csv],{type:‘text/csv’}));a.download=‘nanjing-ramadan-2026.csv’;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
-toast(‘Exported!’,‘CSV downloaded’);
-};
-document.getElementById(‘csv-import’).onclick=async()=>{const f=document.getElementById(‘csv-file’).files[0];if(f)parseCsv(await f.text())};
-document.getElementById(‘csv-apply’).onclick=()=>{const tx=document.getElementById(‘csv-paste’).value.trim();if(tx)parseCsv(tx);else toast(‘Empty’,‘No CSV data provided’)};
-document.getElementById(‘csv-reset’).onclick=()=>{DATA=RAW.map(a=>({date:a[0],imsak:a[1],fajr:a[2],dhuhr:a[3],asr:a[4],iftar:a[5],maghrib:a[6],isha:a[7]}));saveData();toast(‘Reset’,‘Data restored to default’);renderPage()};
+  document.getElementById('tbl-export').onclick=()=>{
+    const hdr=['date',...PRAYERS];
+    const csv=[hdr.join(','),...rows.map(r=>hdr.map(k=>r[k]).join(','))].join('\n');
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='nanjing-ramadan-2026.csv';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+    toast('Exported!','CSV downloaded');
+  };
+  document.getElementById('csv-import').onclick=async()=>{const f=document.getElementById('csv-file').files[0];if(f)parseCsv(await f.text())};
+  document.getElementById('csv-apply').onclick=()=>{const tx=document.getElementById('csv-paste').value.trim();if(tx)parseCsv(tx);else toast('Empty','No CSV data provided')};
+  document.getElementById('csv-reset').onclick=()=>{DATA=RAW.map(a=>({date:a[0],imsak:a[1],fajr:a[2],dhuhr:a[3],asr:a[4],iftar:a[5],maghrib:a[6],isha:a[7]}));saveData();toast('Reset','Data restored to default');renderPage()};
 }
+
 function parseCsv(tx){
-try{
-const lines=tx.replace(/\r/g,’’).trim().split(’\n’).filter(Boolean);
-const split=l=>{let o=[],c=’’,q=0;for(const ch of l){if(ch===’”’){q=!q}else if(ch===’,’&&!q){o.push(c);c=’’}else c+=ch}o.push(c);return o.map(v=>v.trim())};
-if(!lines.length)throw Error(‘Empty file’);
-const hdr=split(lines[0]).map(v=>v.toLowerCase());
-const di=hdr.indexOf(‘date’);
-const pIdx={};PRAYERS.forEach(k=>pIdx[k]=hdr.indexOf(k));
-const rows=[];
-(di>=0?lines.slice(1):lines).forEach(l=>{
-const c=split(l);if(c.length<2)return;
-const r={date:di>=0?c[di]:c[0]};
-PRAYERS.forEach((k,i)=>{const idx=di>=0?pIdx[k]:i+1;r[k]=c[idx]?c[idx].replace(/[^\d:]/g,’’):‘00:00’});
-rows.push(r);
-});
-if(!rows.length)throw Error(‘No valid rows’);
-DATA=rows.sort((a,b)=>a.date.localeCompare(b.date));
-saveData();toast(‘Imported’,rows.length+’ rows loaded’);renderPage();
-}catch(e){toast(‘Import Failed’,e.message)}
+  try{
+    const lines=tx.replace(/\r/g,'').trim().split('\n').filter(Boolean);
+    const split=l=>{let o=[],c='',q=0;for(const ch of l){if(ch==='"'){q=!q}else if(ch===','&&!q){o.push(c);c=''}else c+=ch}o.push(c);return o.map(v=>v.trim())};
+    if(!lines.length)throw Error('Empty file');
+    const hdr=split(lines[0]).map(v=>v.toLowerCase());
+    const di=hdr.indexOf('date');
+    const pIdx={};PRAYERS.forEach(k=>pIdx[k]=hdr.indexOf(k));
+    const rows=[];
+    (di>=0?lines.slice(1):lines).forEach(l=>{
+      const c=split(l);if(c.length<2)return;
+      const r={date:di>=0?c[di]:c[0]};
+      PRAYERS.forEach((k,i)=>{const idx=di>=0?pIdx[k]:i+1;r[k]=c[idx]?c[idx].replace(/[^\d:]/g,''):'00:00'});
+      rows.push(r);
+    });
+    if(!rows.length)throw Error('No valid rows');
+    DATA=rows.sort((a,b)=>a.date.localeCompare(b.date));
+    saveData();toast('Imported',rows.length+' rows loaded');renderPage();
+  }catch(e){toast('Import Failed',e.message)}
 }
 
 // ══ SETTINGS PAGE ═════════════════════════════════════════════════════
 function renderSettings(){
-const pg=document.getElementById(‘page-settings’);
-const togRow=(k,label,sub=’’)=>` <div class="setting-row"> <div><div class="setting-label">${label}</div>${sub?`<div class="text-xs">${sub}</div>`:''}</div> <div class="toggle${S[k]?' on':''}" id="sw-${k}" data-k="${k}"></div> </div>`;
+  const pg=document.getElementById('page-settings');
+  const togRow=(k,label,sub='')=>`
+    <div class="setting-row">
+      <div><div class="setting-label">${label}</div>${sub?`<div class="text-xs">${sub}</div>`:''}</div>
+      <div class="toggle${S[k]?' on':''}" id="sw-${k}" data-k="${k}"></div>
+    </div>`;
 
-const offsets=`<div class="offset-grid"> <div class="offset-item"><label>Global</label><input type="number" id="off-global" value="${S.goff}" class="input"></div> ${PRAYERS.map(k=>`<div class="offset-item"><label style="color:${COLORS[k]}">${pname(k,false)}</label><input type="number" id="off-${k}" data-ok="${k}" value="${S.off[k]||0}" class="input"></div>`).join(’’)}
-
+  const offsets=`<div class="offset-grid">
+    <div class="offset-item"><label>Global</label><input type="number" id="off-global" value="${S.goff}" class="input"></div>
+    ${PRAYERS.map(k=>`<div class="offset-item"><label style="color:${COLORS[k]}">${pname(k,false)}</label><input type="number" id="off-${k}" data-ok="${k}" value="${S.off[k]||0}" class="input"></div>`).join('')}
   </div><div class="text-xs" style="padding:0 12px 10px">Minutes to add (use negative to make earlier)</div>`;
 
-pg.innerHTML=`<div class="card"> <div class="card-header"><span class="card-title">Appearance</span></div> <div class="setting-row"><div class="setting-label">Theme</div> <div class="seg"><button id="s-light" class="${S.theme==='light'?'on':''}">Light</button><button id="s-dark" class="${S.theme==='dark'?'on':''}">Dark</button></div> </div> <div class="setting-row"><div class="setting-label">Language</div> <select class="input" id="s-lang" style="width:auto"><option value="en" ${S.lang==='en'?'selected':''}>English</option><option value="ur" ${S.lang==='ur'?'selected':''}>اردو</option><option value="zh" ${S.lang==='zh'?'selected':''}>中文</option></select> </div> <div class="setting-row"><div class="setting-label">Time Format</div> <div class="seg"><button id="s-24" class="${S.fmt==='24'?'on':''}">24h</button><button id="s-12" class="${S.fmt==='12'?'on':''}">12h</button></div> </div> <div class="setting-row"><div class="setting-label">Week Starts</div> <div class="seg"><button id="s-mon" class="${S.ws==='monday'?'on':''}">Mon</button><button id="s-sun" class="${S.ws==='sunday'?'on':''}">Sun</button></div> </div> </div> <div class="card"> <div class="card-header"><span class="card-title">Display</span></div> ${togRow('shade','Day/Night Shading','Show night/day background on calendar')} ${togRow('fshade','Fasting Shading','Highlight fasting hours in orange')} ${togRow('dual','Dual Language Labels','Show prayer names in two languages')} </div> <div class="card"> <div class="card-header"><span class="card-title">Alerts</span></div> ${togRow('alerts','Enable Alerts','Notify at each prayer time')} ${togRow('sound','Sound','Play a tone at prayer time')} ${togRow('vib','Vibration','Vibrate at prayer time')} </div> <div class="card"> <div class="card-header"><span class="card-title">Time Offsets</span></div> ${offsets} </div> <div class="card"> <div class="card-body"> <div class="flex items-center gap-8"> <button class="btn btn-ghost" id="s-reset">Reset All Settings</button> <button class="btn btn-primary" id="s-copy">Copy Timetable</button> </div> </div> </div>`;
+  pg.innerHTML=`
+    <div class="card">
+      <div class="card-header"><span class="card-title">Appearance</span></div>
+      <div class="setting-row"><div class="setting-label">Theme</div>
+        <div class="seg"><button id="s-light" class="${S.theme==='light'?'on':''}">Light</button><button id="s-dark" class="${S.theme==='dark'?'on':''}">Dark</button></div>
+      </div>
+      <div class="setting-row"><div class="setting-label">Time Format</div>
+        <div class="seg"><button id="s-24" class="${S.fmt==='24'?'on':''}">24h</button><button id="s-12" class="${S.fmt==='12'?'on':''}">12h</button></div>
+      </div>
+      <div class="setting-row"><div class="setting-label">Week Starts</div>
+        <div class="seg"><button id="s-mon" class="${S.ws==='monday'?'on':''}">Mon</button><button id="s-sun" class="${S.ws==='sunday'?'on':''}">Sun</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-title">Display</span></div>
+      ${togRow('shade','Day/Night Shading','Show night/day background on calendar')}
+      ${togRow('fshade','Fasting Shading','Highlight fasting hours in orange')}
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-title">Alerts</span></div>
+      ${togRow('alerts','Enable Alerts','Notify at each prayer time')}
+      ${togRow('sound','Sound','Play a tone at prayer time')}
+      ${togRow('vib','Vibration','Vibrate at prayer time')}
+    </div>
+    <div class="card">
+      <div class="card-header"><span class="card-title">Time Offsets</span></div>
+      ${offsets}
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="flex items-center gap-8">
+          <button class="btn btn-ghost" id="s-reset">Reset All Settings</button>
+          <button class="btn btn-primary" id="s-copy">Copy Timetable</button>
+        </div>
+      </div>
+    </div>
+  `;
 
-// Theme
-pg.querySelector(’#s-light’).onclick=()=>{S.theme=‘light’;saveSettings();renderPage()};
-pg.querySelector(’#s-dark’).onclick=()=>{S.theme=‘dark’;saveSettings();renderPage()};
-pg.querySelector(’#s-lang’).onchange=e=>{S.lang=e.target.value;saveSettings();renderPage()};
-pg.querySelector(’#s-24’).onclick=()=>{S.fmt=‘24’;saveSettings();renderPage()};
-pg.querySelector(’#s-12’).onclick=()=>{S.fmt=‘12’;saveSettings();renderPage()};
-pg.querySelector(’#s-mon’).onclick=()=>{S.ws=‘monday’;saveSettings();renderPage()};
-pg.querySelector(’#s-sun’).onclick=()=>{S.ws=‘sunday’;saveSettings();renderPage()};
-pg.querySelectorAll(’.toggle’).forEach(el=>{el.onclick=()=>{const k=el.dataset.k;S[k]=S[k]?0:1;saveSettings();renderPage()}});
-// Offsets
-pg.querySelector(’#off-global’).onchange=e=>{S.goff=+e.target.value||0;saveSettings()};
-pg.querySelectorAll(’[data-ok]’).forEach(el=>{el.onchange=()=>{S.off[el.dataset.ok]=+el.value||0;saveSettings()}});
-// Reset
-pg.querySelector(’#s-reset’).onclick=()=>{if(!confirm(‘Reset all settings to default?’))return;S=JSON.parse(JSON.stringify(DEF));saveSettings();renderPage()};
-// Copy
-pg.querySelector(’#s-copy’).onclick=()=>{
-const rows=DATA.map((r,i)=>{const or=applyOffsets(r);return`${i+1}. ${or.date} | Sehri: ${fmtTime(or.imsak)} | Iftar: ${fmtTime(or.iftar)}`}).join(’\n’);
-navigator.clipboard&&navigator.clipboard.writeText(rows).then(()=>toast(t(‘copied’),‘All 30 prayer times’));
-};
+  pg.querySelector('#s-light').onclick=()=>{S.theme='light';saveSettings();renderPage()};
+  pg.querySelector('#s-dark').onclick=()=>{S.theme='dark';saveSettings();renderPage()};
+  pg.querySelector('#s-24').onclick=()=>{S.fmt='24';saveSettings();renderPage()};
+  pg.querySelector('#s-12').onclick=()=>{S.fmt='12';saveSettings();renderPage()};
+  pg.querySelector('#s-mon').onclick=()=>{S.ws='monday';saveSettings();renderPage()};
+  pg.querySelector('#s-sun').onclick=()=>{S.ws='sunday';saveSettings();renderPage()};
+  pg.querySelectorAll('.toggle').forEach(el=>{el.onclick=()=>{const k=el.dataset.k;S[k]=S[k]?0:1;saveSettings();renderPage()}});
+  pg.querySelector('#off-global').onchange=e=>{S.goff=+e.target.value||0;saveSettings()};
+  pg.querySelectorAll('[data-ok]').forEach(el=>{el.onchange=()=>{S.off[el.dataset.ok]=+el.value||0;saveSettings()}});
+  pg.querySelector('#s-reset').onclick=()=>{if(!confirm('Reset all settings to default?'))return;S=JSON.parse(JSON.stringify(DEF));S.lang='en';S.dual=0;saveSettings();renderPage()};
+  pg.querySelector('#s-copy').onclick=()=>{
+    const rows=DATA.map((r,i)=>{const or=applyOffsets(r);return`${i+1}. ${or.date} | Sehri: ${fmtTime(or.imsak)} | Iftar: ${fmtTime(or.iftar)}`}).join('\n');
+    navigator.clipboard&&navigator.clipboard.writeText(rows).then(()=>toast(t('copied'),'All 30 prayer times'));
+  };
 }
 
 // ── THEME TOGGLE ──────────────────────────────────────────────────────
 function initThemeToggle(){
-document.getElementById(‘theme-toggle’).onclick=()=>{
-S.theme=S.theme===‘dark’?‘light’:‘dark’;saveSettings();updateHeader();
-document.body.classList.toggle(‘light’,S.theme===‘light’);
-};
-}
-
-// ── TICK ──────────────────────────────────────────────────────────────
-let lastTab=null;
-function tick(){
-updateHeader();
-const needsFull=S.tab!==lastTab;
-if(needsFull){lastTab=S.tab;renderPage();}
-else{
-switch(S.tab){
-case ‘summary’:renderSummary();break;
-case ‘day’:if(s===today())renderDay();break;
-}
-}
-checkAlerts();
+  document.getElementById('theme-toggle').onclick=()=>{
+    S.theme=S.theme==='dark'?'light':'dark';saveSettings();updateHeader();
+    document.body.classList.toggle('light',S.theme==='light');
+  };
 }
 
 // ── INIT ──────────────────────────────────────────────────────────────
-initNav();initThemeToggle();
-document.body.classList.toggle(‘light’,S.theme===‘light’);
+initNav();
+initThemeToggle();
+document.body.classList.toggle('light',S.theme==='light');
 renderPage();
 setInterval(()=>{
-updateHeader();
-if(S.tab===‘summary’)renderSummary();
-else if(S.tab===‘day’&&selectedDate===today())renderDay();
-checkAlerts();
+  updateHeader();
+  if(S.tab==='summary')renderSummary();
+  else if(S.tab==='day'&&selectedDate===today())renderDay();  // FIX: was undefined `s`
+  checkAlerts();
 },1000);
 
 })();
